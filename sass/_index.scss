@@ -1,0 +1,82 @@
+//Index Style
+
+.eh__index__image {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+}
+
+.bg {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+}
+
+
+.eh__index__header {
+    margin-top: 100px;
+    text-align: center;
+
+    img {
+        width: 675px;
+        height: 135px;
+        margin: 0 auto;
+    }
+}
+
+
+.eh__index__footer {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+
+}
+
+.eh__flag__list {
+    list-style-type: none;
+}
+
+.eh__flag__list__item {
+    float: left;
+    border-right: 3px solid $white;
+    width: auto;
+
+    &:last-child {
+        border: 0;
+    }
+
+    img {
+        opacity: 0.5;
+    }
+
+    .eh__link {
+        @include font-lobster;
+        color: $white;
+        font-size: 35px;
+        padding: 0 30px 0 45px;
+        opacity: 0.5;
+
+        &:hover {
+                opacity: 1;
+            text-decoration: none;
+            color: $vio;
+            
+            img {
+                opacity: 1;
+            }
+            
+        
+        }
+    }
+
+    .eh__link__text {
+    }
+}

@@ -1,0 +1,140 @@
+//Colors
+$white: #ffffff;
+$black: #000000;
+$vio: #47113d;
+$gray: #666666;
+$lightgray: #ededed;
+
+//Font-sizes
+$font-size-base: 14px;
+$font-size-btn: 20px;
+
+$headline-medium: 40px;
+$headline-small: 20px;
+
+
+//Headline Mixins
+@mixin headline--medium($modifier:default) {
+    display: block;
+    font-size: $headline-medium;
+    line-height: $headline-medium + 8;
+    color: $vio;
+    margin-bottom: 20px;
+    @include font-lobster;
+
+    //@media (max-width: $screen-tablet) {
+    //    font-size: 30px;
+    //    line-height: 35px;
+    //}
+}
+
+@mixin headline--small($modifier:default) {
+    display: block;
+    font-size: $headline-small;
+    line-height: $headline-small + 8;
+    color: $vio;
+    margin-bottom: 15px;
+    @include font-lobster;
+
+    // @media (max-width: $screen-tablet) {
+    //     font-size: 20px;
+    //     line-height: 25px;
+    // }
+}
+
+
+//Buttons Mixin
+@mixin btn ($modifier:default) {
+    @include font-lobster;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 13px;
+    font-size: $font-size-btn;
+    line-height: $font-size-btn;
+    color: $white;
+    background: $vio;
+    border: 1px solid transparent;
+
+    //@media (max-width: $screen-lg-desktop) {
+    //    font-size: $font-size-btn - 2;
+    //}
+
+    &:hover {
+        background: rgba($vio, 0.5);
+        color: $white;
+        text-decoration: none;
+    }
+
+    &:active {
+        background: $white;
+        color: $vio;
+        border: 1px solid $vio;
+        text-decoration: none;
+    }
+
+    &:focus {
+        background: $white;
+        color: $vio;
+        border: 1px solid $vio;
+        text-decoration: none;
+    }
+
+    @if $modifier == white {
+        color: $vio;
+        background: $white;
+
+        &:hover {
+            background: rgba($white, 0.5);
+            color: $vio;
+            text-decoration: none;
+        }
+
+        &:active {
+            background: $vio;
+            color: $white;
+            border: 1px solid $white;
+            text-decoration: none;
+        }
+
+        &:focus {
+            background: $vio;
+            color: $white;
+            border: 1px solid $white;
+            text-decoration: none;
+        }
+    }
+}
+
+
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    @include font-opensans;
+    font-size: $font-size-base;
+    line-height: 20px;
+    color: $gray;
+    background: $white;
+
+    // @media (max-width: $screen-tablet) {
+    //    font-size: 18px;
+    // }
+}
+
+h2 {
+    @include headline--medium;
+}
+
+h3 {
+    @include headline--small;
+}
+
+.eh__btn {
+    @include btn;
+}
+
+.eh__btn-white {
+    @include btn(white);
+}

@@ -1,0 +1,24 @@
+@font-face{ 
+	font-family: 'Lobster';
+	src: 
+        url('../fonts/lobster/Lobster.oft') format('otf'),
+        url('../fonts/lobster/Lobster.woff') format('woff');
+}
+
+@font-face{ 
+	font-family: 'OpenSans';
+	src: 
+        url('../fonts/opensans/OpenSans.oft') format('ttf'),
+        url('../fonts/opensans/OpenSans.woff') format('woff');
+}
+
+
+@mixin font-lobster {
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+@mixin font-opensans {
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
