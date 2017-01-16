@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "4a4fd58c62bc4bfc7998fe9cfe922bc2bc8d779800448795188dbff39eb58858",
-    "current": "4a4fd58c62bc4bfc7998fe9cfe922bc2bc8d779800448795188dbff39eb58858"
+    "previous": "ba57fe5dc24a21dd1d567dce8e5a9bfa41967fe1963f318597625115d45efd08",
+    "current": "ba57fe5dc24a21dd1d567dce8e5a9bfa41967fe1963f318597625115d45efd08"
   },
   "fonts": [
-    "../../fonts/fontcustom/eh-iconfont_4a4fd58c62bc4bfc7998fe9cfe922bc2.ttf",
-    "../../fonts/fontcustom/eh-iconfont_4a4fd58c62bc4bfc7998fe9cfe922bc2.svg",
-    "../../fonts/fontcustom/eh-iconfont_4a4fd58c62bc4bfc7998fe9cfe922bc2.woff",
-    "../../fonts/fontcustom/eh-iconfont_4a4fd58c62bc4bfc7998fe9cfe922bc2.eot"
+    "../../fonts/fontcustom/eh-iconfont_ba57fe5dc24a21dd1d567dce8e5a9bfa.ttf",
+    "../../fonts/fontcustom/eh-iconfont_ba57fe5dc24a21dd1d567dce8e5a9bfa.svg",
+    "../../fonts/fontcustom/eh-iconfont_ba57fe5dc24a21dd1d567dce8e5a9bfa.woff",
+    "../../fonts/fontcustom/eh-iconfont_ba57fe5dc24a21dd1d567dce8e5a9bfa.eot"
   ],
   "glyphs": {
     "church": {
