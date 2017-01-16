@@ -1,0 +1,78 @@
+{
+  "checksum": {
+    "previous": "4a4fd58c62bc4bfc7998fe9cfe922bc2bc8d779800448795188dbff39eb58858",
+    "current": "4a4fd58c62bc4bfc7998fe9cfe922bc2bc8d779800448795188dbff39eb58858"
+  },
+  "fonts": [
+    "../../fonts/fontcustom/eh-iconfont_4a4fd58c62bc4bfc7998fe9cfe922bc2.ttf",
+    "../../fonts/fontcustom/eh-iconfont_4a4fd58c62bc4bfc7998fe9cfe922bc2.svg",
+    "../../fonts/fontcustom/eh-iconfont_4a4fd58c62bc4bfc7998fe9cfe922bc2.woff",
+    "../../fonts/fontcustom/eh-iconfont_4a4fd58c62bc4bfc7998fe9cfe922bc2.eot"
+  ],
+  "glyphs": {
+    "church": {
+      "codepoint": 61696,
+      "source": "../../img/svg-iconfont/church.svg"
+    },
+    "cups": {
+      "codepoint": 61697,
+      "source": "../../img/svg-iconfont/cups.svg"
+    },
+    "dowload": {
+      "codepoint": 61698,
+      "source": "../../img/svg-iconfont/dowload.svg"
+    },
+    "galerie": {
+      "codepoint": 61699,
+      "source": "../../img/svg-iconfont/galerie.svg"
+    },
+    "honeymoon": {
+      "codepoint": 61700,
+      "source": "../../img/svg-iconfont/honeymoon.svg"
+    },
+    "infos": {
+      "codepoint": 61701,
+      "source": "../../img/svg-iconfont/infos.svg"
+    },
+    "menu": {
+      "codepoint": 61705,
+      "source": "../../img/svg-iconfont/menu.svg"
+    },
+    "send": {
+      "codepoint": 61704,
+      "source": "../../img/svg-iconfont/send.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "eh-iconfont",
+    "force": false,
+    "input": {
+      "templates": "../../img/svg-iconfont",
+      "vectors": "../../img/svg-iconfont"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "../../fonts/fontcustom",
+      "fonts": "../../fonts/fontcustom",
+      "preview": "../../fonts/fontcustom"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "templates": [
+      "preview",
+      "css"
+    ]
+  },
+  "templates": [
+    "../../fonts/fontcustom/eh-iconfont-preview.html",
+    "../../fonts/fontcustom/eh-iconfont.css"
+  ]
+}
