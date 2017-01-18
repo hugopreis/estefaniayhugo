@@ -2,20 +2,33 @@
 
 header {
     height: 450px;
-    background-image: url(https://placekitten.com/g/1200/450);
     background-size: cover;
     background-position: center center;
     position: relative;
 }
 
-.eh__header__image {
-
+.eh__header__image__wrapper {
+    height: 100%;
 }
 
+.eh__header__image {
+    position: relative;
+    height: 100%;
+
+    img {
+        width: 675px;
+        height: 135px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 
 .eh__sidebar {
     position: absolute;
     right: 0;
+    z-index: 1;
 
     ul {
         float: none;
@@ -24,8 +37,8 @@ header {
         @media (max-width: $screen-xs-max) {
             background: $gray;
             position: absolute;
-            top: 5px;
-            right: 100px;
+            top: -2px;
+            right: 55px;
         }
 
         li {
@@ -33,14 +46,44 @@ header {
             display: block;
 
             @media (max-width: $screen-tablet) {
-                width: 200px;
+                width: 122px;
                 text-align: right;
 
             }
 
             a {
+                opacity:0.5;
+                padding: 7px;
 
-                span {
+                @media (max-width: $screen-tablet) {
+                    padding: 0 10px 20px;
+                }
+
+                &.first {
+                    padding-top:20px;
+
+                    @media (max-width: $screen-tablet) {
+                        padding-top: 10px;
+                    }
+                }
+
+                &.last {
+                    @media (max-width: $screen-tablet) {
+                        padding-bottom: 10px;
+                    }
+                } 
+
+                &:hover,
+                &:focus {
+                    opacity: 1;
+                    background: transparent;
+                }
+
+                &.active {
+                    opacity: 1;
+                }
+
+                .lang-text {
                     @media (min-width: $screen-tablet) {
                         display: none;
                     }
@@ -57,17 +100,36 @@ header {
     img {
         height: 32px;
         display: inline-block;
+
+        @media (max-width: $screen-tablet) {
+            height: 15px;
+            top: -2px;
+            position: relative;
+        }
     }
 
 
     .navbar-toggle {
+        color: white;
+        border-radius: 0;
+        border: 0;
+        width: 30px;
+        padding: 0;
+        margin: 5px;
+        height: 30px;
+
         &.open {
             background: $gray;
         }
+
+        .eh__icon {
+            position: absolute;
+            top: 6px;
+            left: 2px;
+            font-size: 20px;
+        }
     }
 }
-
-
 
 .eh__anchormenu {
     position: absolute;
@@ -87,8 +149,6 @@ header {
             padding: 0;
             float: left;
             position: relative;
-            background: $vio;
-            opacity: 0.5;
 
             a {
                 @include font-lobster;
@@ -98,17 +158,66 @@ header {
                 display: block;
                 opacity: 1;
                 cursor: pointer;
-                
-                &:hover {
-                    
-                    li {
-                        opacity: 1;
-                    }
-                    
-                    opacity: 1;
+                background: rgba($vio, 0.5);
+
+                &:hover,
+                &:focus {
+                    background: rgba($vio, 1);
+                    text-decoration: none;
                 }
             }
         }
     }
 }
 
+
+
+#links1row  {
+    a {
+        display: block;
+    }
+
+    .img-thumbnail {
+        padding: 0;
+        line-height: 1.42857143;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        display: inline-block;
+        max-width: 100%;
+        width: 70px;
+        height: auto;
+        float: left
+    }
+
+
+}
+
+
+
+
+.eh__infobanner {
+    background: $vio;
+}
+
+
+
+
+
+footer {
+    height: 240px;
+    background-image: url(https://placekitten.com/g/1200/240);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+}
+
+.eh__hashtag {
+    @include font-lobster;
+    font-size: 40px;
+    color: $white;
+}
