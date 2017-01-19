@@ -1,5 +1,9 @@
 //Singlepage Style
 
+.main {
+    margin-top: 20px;
+}
+
 header {
     height: 450px;
     background-size: cover;
@@ -170,9 +174,7 @@ header {
     }
 }
 
-
-
-#links1row  {
+#gallery  {
     a {
         display: block;
     }
@@ -196,20 +198,168 @@ header {
 
 }
 
+.eh__icon {
+    font-size: 45px;
+    color: $vio;
 
+    #three & {
+        margin-right: 20px;
+    }
 
+    #five & {
+        margin-bottom: 10px;
+        display: block;
 
-.eh__infobanner {
-    background: $vio;
+    }
 }
 
 
+.eh__para {
+    margin-bottom: 30px;
 
+    #one & {
+        margin: 0;
+    }
+}
+
+#four,
+#six {
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+.eh__infobanner {
+    background: $vio;
+    height: 120px;
+    
+    .eh__btn-white {
+        min-width: 150px;
+        
+        &:focus,
+        &:active {
+            .eh__icon {
+                color: $white;
+            }
+        }
+    }
+
+    .eh__icon {
+        color: $white;
+        font-size: 70px;
+
+        &.icon-dowload {
+            color: $vio;
+            font-size: 20px;
+            padding-left: 8px;
+        }
+    }
+
+    p {
+        color: $white;
+        font-size: 20px;
+        line-height: 28px;
+        @include font-lobster;
+
+        &:first-child {
+            font-size: 30px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+.eh__form {
+    text-align: left;
+    float: left;
+    margin-bottom: 60px;
+
+    .form-group {
+        margin: 0;
+        position: relative;
+    }
+
+    label {
+        @include font-lobster;
+        font-size: 15px;
+        color: $vio;
+        margin: 10px 0 5px;
+        width: 100%;
+    }
+
+    input {
+        height: 40px;
+        background: $lightgray;
+        border: 1p solid $border;
+        width: 100%;
+        @include font-opensans;
+        font-size: 14px;
+        line-height: normal;
+        color: $gray;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    textarea {
+        resize: none;
+        height: 116px;
+        background: $lightgray;
+        border: 1p solid $border;
+        @include font-opensans;
+        font-size: 14px;
+        line-height: normal;
+        color: $gray;
+        width: 100%;
+        padding: 5px;
+    }
+
+
+    .eh__btn {
+        min-width: 120px;
+        margin-top: 29px;
+        padding: 9px 13px;
+    }
+
+    .bootstrap-select {
+        width: 100%;
+
+        button {
+            background: $lightgray;
+            border-radius: 0;
+            height: 40px;
+        }
+
+        .caret {
+            border-top: 10px dashed;
+            border-top: 10px solid \9;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            margin-top: -5px;
+        }
+    }
+
+    img {
+        display: inline-block;
+        width: 60%;
+        padding-left: 10px;
+    }
+}
+
+
+.eh__infobanner__inner {
+    padding: 22px 0;
+}
+
+.eh__infobanner__text {
+    text-align: center
+}
 
 
 footer {
     height: 240px;
-    background-image: url(https://placekitten.com/g/1200/240);
+    background: $gray;
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -220,4 +370,8 @@ footer {
     @include font-lobster;
     font-size: 40px;
     color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

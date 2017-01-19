@@ -4,6 +4,7 @@ $black: #000000;
 $vio: #47113d;
 $gray: #666666;
 $lightgray: #ededed;
+$border: #999999;
 
 //Font-sizes
 $font-size-base: 14px;
@@ -16,7 +17,7 @@ $headline-small: 20px;
 $color-red-error: rgb(185, 74, 72) !default;
 $color-grey-arrow: rgba(204, 204, 204, 0.2) !default;
 
-$width-default: 220px !default; // 3 960px-grid columns
+$width-default: 100% !default; // 3 960px-grid columns
 
 $zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
 
@@ -32,6 +33,7 @@ $input-color-placeholder: #999 !default;
     color: $vio;
     margin-bottom: 20px;
     @include font-lobster;
+    margin: 50px 0 15px;
 
     //@media (max-width: $screen-tablet) {
     //    font-size: 30px;
@@ -44,7 +46,7 @@ $input-color-placeholder: #999 !default;
     font-size: $headline-small;
     line-height: $headline-small + 8;
     color: $vio;
-    margin-bottom: 15px;
+    margin: 10px 0;
     @include font-lobster;
 
     // @media (max-width: $screen-tablet) {
