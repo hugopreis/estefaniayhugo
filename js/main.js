@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-    //Hypenator initalization
-    Hyphenator.run();
-
-
     // Global scroll with subnavi
     var scrollTo = function(hash){
 

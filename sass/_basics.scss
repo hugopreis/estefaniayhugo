@@ -124,12 +124,17 @@ $input-color-placeholder: #999 !default;
     @include box-sizing(border-box);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     @include font-opensans;
     font-size: $font-size-base;
     line-height: 20px;
     color: $gray;
     background: $white;
+    height: 100%;
 
     // @media (max-width: $screen-tablet) {
     //    font-size: 18px;
