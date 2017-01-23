@@ -184,8 +184,8 @@ header {
             a {
                 @include font-lobster;
                 color: $white;
-                font-size: 18px;
-                padding: 12px 20px;
+                font-size: 20px;
+                padding: 12px 18px;
                 display: block;
                 opacity: 1;
                 cursor: pointer;
@@ -347,9 +347,9 @@ iframe {
 
     label {
         @include font-lobster;
-        font-size: 15px;
+        font-size: 20px;
         color: $vio;
-        margin: 10px 0 5px;
+        margin: 20px 0 5px;
         width: 100%;
     }
 
@@ -368,7 +368,7 @@ iframe {
 
     textarea {
         resize: none;
-        height: 116px;
+        height: 126px;
         background: $lightgray;
         border: 1px solid $border;
         @include font-opensans;
@@ -382,7 +382,7 @@ iframe {
 
     .eh__btn {
         min-width: 120px;
-        margin-top: 29px;
+        margin-top: 40px;
         padding: 9px 13px;
     }
 
@@ -451,7 +451,7 @@ iframe {
 
 footer {
     height: 240px;
-    background: $gray;
+    background-image: url(../img/footer_pic.jpg);
     background-size: cover;
     background-position: center center;
     position: relative;

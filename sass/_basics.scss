@@ -2,12 +2,13 @@
 $white: #ffffff;
 $black: #000000;
 $vio: #47113d;
-$gray: #666666;
+$gray: #999999;
 $lightgray: #ededed;
 $border: #999999;
+$introbg: #e6e7e8;
 
 //Font-sizes
-$font-size-base: 14px;
+$font-size-base: 15px;
 $font-size-btn: 20px;
 
 $headline-medium: 40px;
@@ -24,6 +25,9 @@ $zindex-select-dropdown: 1060 !default; // must be higher than a modal backgroun
 //** Placeholder text color
 $input-color-placeholder: #999 !default;
 
+.bold {
+    font-weight: 800;
+}
 
 //Headline Mixins
 @mixin headline--medium($modifier:default) {
@@ -34,11 +38,6 @@ $input-color-placeholder: #999 !default;
     margin-bottom: 20px;
     @include font-lobster;
     margin: 50px 0 15px;
-
-    //@media (max-width: $screen-tablet) {
-    //    font-size: 30px;
-    //    line-height: 35px;
-    //}
 }
 
 @mixin headline--small($modifier:default) {
@@ -48,13 +47,7 @@ $input-color-placeholder: #999 !default;
     color: $vio;
     margin: 10px 0;
     @include font-lobster;
-
-    // @media (max-width: $screen-tablet) {
-    //     font-size: 20px;
-    //     line-height: 25px;
-    // }
 }
-
 
 //Buttons Mixin
 @mixin btn ($modifier:default) {
@@ -68,10 +61,6 @@ $input-color-placeholder: #999 !default;
     color: $white;
     background: $vio;
     border: 1px solid transparent;
-
-    //@media (max-width: $screen-lg-desktop) {
-    //    font-size: $font-size-btn - 2;
-    //}
 
     &:hover {
         background: rgba($vio, 0.5);
@@ -136,9 +125,9 @@ body {
     background: $white;
     height: 100%;
 
-    // @media (max-width: $screen-tablet) {
-    //    font-size: 18px;
-    // }
+    &.intro {
+        background: $introbg;
+    }
 }
 
 h2 {
