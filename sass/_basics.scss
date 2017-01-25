@@ -2,7 +2,7 @@
 $white: #ffffff;
 $black: #000000;
 $vio: #47113d;
-$gray: #999999;
+$gray: #333333;
 $lightgray: #ededed;
 $border: #999999;
 $introbg: #e6e7e8;
@@ -126,7 +126,7 @@ body {
     height: 100%;
 
     &.intro {
-        background: $introbg;
+        background: $vio;
     }
 }
 

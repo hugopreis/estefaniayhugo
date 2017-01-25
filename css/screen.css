@@ -8885,13 +8885,13 @@ body {
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color: #999999;
+  color: #333333;
   background: #ffffff;
   height: 100%;
 }
 /* line 128, ../sass/_basics.scss */
 body.intro {
-  background: #e6e7e8;
+  background: #47113d;
 }
 
 /* line 133, ../sass/_basics.scss */
@@ -9082,7 +9082,7 @@ h3 {
 }
 /* line 65, ../sass/_index.scss */
 .eh__flag__list__item img {
-  opacity: 0.5;
+  opacity: 0.75;
   height: 28px;
   display: inline-block;
 }
@@ -9092,7 +9092,7 @@ h3 {
   font-weight: 300;
   color: #ffffff;
   font-size: 35px;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 /* line 77, ../sass/_index.scss */
 .eh__flag__list__item .eh__link:hover, .eh__flag__list__item .eh__link:focus {
@@ -9170,7 +9170,7 @@ header {
 @media (max-width: 767px) {
   /* line 49, ../sass/_page.scss */
   .eh__sidebar ul {
-    background: #999999;
+    background: #333333;
     position: absolute;
     top: -2px;
     right: 55px;
@@ -9262,7 +9262,7 @@ header {
 }
 /* line 137, ../sass/_page.scss */
 .eh__sidebar .navbar-toggle.open {
-  background: #999999;
+  background: #333333;
 }
 /* line 141, ../sass/_page.scss */
 .eh__sidebar .navbar-toggle .eh__icon {
@@ -9503,7 +9503,7 @@ iframe {
   font-weight: 300;
   font-size: 14px;
   line-height: normal;
-  color: #999999;
+  color: #333333;
   border-radius: 0;
   box-shadow: none;
 }
@@ -9517,7 +9517,7 @@ iframe {
   font-weight: 300;
   font-size: 14px;
   line-height: normal;
-  color: #999999;
+  color: #333333;
   width: 100%;
   padding: 5px;
 }
@@ -9677,7 +9677,7 @@ footer {
   text-align: center;
   font-family: OpenSans, Arial, Helvetica, sans-serif;
   font-weight: 300;
-  color: #999999;
+  color: #333333;
 }
 
 /* line 58, ../sass/_intro.scss */
